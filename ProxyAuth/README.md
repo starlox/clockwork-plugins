@@ -9,5 +9,8 @@ Allows the 'admin' and 'operator' command authentication to be tied to a charact
 Use
 ----
 
-*Operator:* Give the `O` flag to a character.
-*Admin:* Give the `A` flag to a character.
+##### Operator:
+Give the **O** flag to a character.  
+
+##### Admin:
+Give the **A** flag to a character.

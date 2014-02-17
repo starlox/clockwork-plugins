@@ -20,10 +20,10 @@ function cwDelayLOOC:PlayerCanSayLOOC(player, text)
 	local libplayer = Clockwork.player;
 	local curTime = CurTime();
 	
-	if (v.cwNextTalkLOOC ~= nil and curTime < v.cwNextTalkLOOC) then
+	if (player.cwNextTalkLOOC ~= nil and curTime < player.cwNextTalkLOOC) then
 		libplayer:Notify(player, "You cannot cannot talk in LOOC for another "..math.ceil(player.cwNextTalkLOOC - curTime).." second(s)!");
 		return false;
 	end;
 	
-	v.cwNextTalkLOOC = curTime + interval;
+	player.cwNextTalkLOOC = curTime + interval;
 end;
